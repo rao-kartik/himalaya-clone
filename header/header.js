@@ -29,3 +29,18 @@ function searchData(){
 
     input.value = null;
 }
+
+//  On Mouse Over
+
+let shop = document.getElementById("shop");
+let navDropdown = document.getElementById("navDropdown");
+
+shop.addEventListener("mouseover", ()=>{
+    navDropdown.style.visibility = "visible";
+    shop.style.cursor = "pointer"
+})
+
+navDropdown.addEventListener("mouseleave", ()=>{
+    let navDropdown = document.getElementById("navDropdown");
+    navDropdown.style.visibility = "hidden";
+})

@@ -103,3 +103,83 @@ html, body {
 i {
     cursor: pointer;
 }   
+
+/* Nav Droppdown */
+
+#navDropdown {
+    position: relative;
+    visibility: hidden;
+    z-index: 500;
+}
+#navDropdown, #navTopD, #navBottomD{
+    display: flex;
+}
+
+#navDropdown > div:nth-child(1){
+    width: 60%;
+    height: 400px;
+    padding-left: 15%;
+    background: linear-gradient(45deg, #f4f7f3, #fff 70%);
+}    
+
+#navTopD > div, #navBottomD > div {
+    margin-right: 50px;
+    width: 33%;
+    line-height: 26px;
+}
+
+#navDropdown h4 {
+    color: #66765f;
+    font-size: 18px;
+}
+
+#navTopD, #BottomD {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#navDropdown p {
+    color: #777777;
+    font-size: 16px;
+}
+
+
+#imgBox {
+    width: 300px;
+    height: 330px;
+    margin-left: 5%;
+    position: relative;
+}
+
+#imgBox > img {
+    width: 100%;
+    height: 300px;
+}
+
+#imgBox > img:hover {
+    width: 110%;
+    height: 330px;
+}
+
+#imgBox > div {
+    background-color: #FF7451;
+    display: inline-block;
+    margin: auto;
+    width: 160px;
+    height: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 15px;
+}
+
+#imgBox > div > a {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+#imgBox > p {
+    text-align: center;
+}
+
