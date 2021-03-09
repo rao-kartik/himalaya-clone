@@ -1,0 +1,44 @@
+.centeralign
+{
+    text-align: center;
+    margin-top: 5%;
+    
+}
+#shopbyid
+{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    margin-left: 15%;
+
+    
+}
+#shopbyid img
+{
+    width: 350px;
+}
+#shopbyid img:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:400px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+#bestid
+{
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin-left: 15%;
+    
+}
+#bestid::-webkit-scrollbar {
+    display: none;
+}
+#bestid img{
+    width: 230px;
+}
