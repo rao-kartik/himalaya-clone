@@ -30,7 +30,7 @@ function searchData(){
     input.value = null;
 }
 
-//  On Mouse Over
+//  On Mouse Over shop
 
 let shop = document.getElementById("shop");
 let navDropdown = document.getElementById("navDropdown");
@@ -41,6 +41,20 @@ shop.addEventListener("mouseover", ()=>{
 })
 
 navDropdown.addEventListener("mouseleave", ()=>{
-    let navDropdown = document.getElementById("navDropdown");
     navDropdown.style.visibility = "hidden";
+})
+
+// userData
+
+let user = document.getElementById("user");
+user.addEventListener("click", userOptions);
+
+let userDropdown = document.getElementById("userDropdown")
+
+function userOptions() {
+    userDropdown.style.visibility = "visible";
+}
+
+userDropdown.addEventListener("mouseleave", ()=>{
+    userDropdown.style.visibility = "hidden";
 })
