@@ -17,7 +17,7 @@ function closeSearch(){
 // search
 
 var searchD = document.getElementById("searchData");
-console.log(searchD)
+// console.log(searchD)
 searchD.addEventListener("click", searchData);
 
 function searchData(){
