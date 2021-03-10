@@ -89,18 +89,31 @@
 #page4 div {
     width: 30%;
     border: 2px solid rgb(245, 245, 245);
-    height: 70%;
+    height: 100%;
     padding: 2%;
+    font-size: 1.2vw;
     margin-left: 2%;
 }
 
-#line {
+#div2 h2, #div3 p,#div4 > p {
+    text-align: left;
+}
+#div2 > h2 {
+    font-size: 1.1em;
+}
+#div4 > p {
+    font-size: 0.6em;
+    margin-top: 1%;
+}
+
+
+.line {
     background-color: #48CAB2;
     height: 0.8vh;
     width: 2.5vw;
 }
 
-#line,
+.line,
 #comments div h4 {
     margin-bottom: 5%;
 }
