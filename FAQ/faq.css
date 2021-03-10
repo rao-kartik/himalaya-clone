@@ -1,0 +1,31 @@
+main>#second_main>.collapsible {
+    background-color: rgb(235, 233, 233);
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-left: 12%;
+    color: rgba(0, 102, 102, 1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  main>#second_main>.active, main>#second_main>.collapsible:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  main>#second_main>.content {
+    padding: 0 18px;
+    display: none;
+    width: 77.3%;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin-left: 12%;
+    font-family: 'Poppins', sans-serif;
+  }
+  #second_main{
+      width: 90%;
+      margin: auto;
+  }
