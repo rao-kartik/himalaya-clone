@@ -11,6 +11,16 @@ html, body {
     height: 100%;
 }
 
+#address {
+    width: 100%;
+    line-height: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #777777;
+    background-color: #f7f8fa;
+    font-size: 10px;
+}
+
 #login > p:nth-child(1){
     font-size: 36px;
     font-weight: 500;
@@ -68,7 +78,7 @@ html, body {
     border: 1ps solid black;
 }
 
-#button, #register > button {
+#button, #register button {
     background-color: #a3b49b;
     color: #ffffff;
     font-size: 14px;
@@ -80,6 +90,10 @@ html, body {
     outline: none;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+#button:hover {
+    cursor: pointer;
 }
 
 sup {
@@ -96,9 +110,13 @@ sup {
     padding-top: 50px;
 }
 
-#register > button {
+#register button {
     background-color: #66765f;
     margin-top: 20px;
+}
+
+#register button:hover{
+    cursor: pointer;
 }
 
 #description {

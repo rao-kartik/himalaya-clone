@@ -42,3 +42,17 @@ function registerUser(e){
     let pass = document.getElementById("userPassword");
     pass.value = null;
 }
+
+let returnUnderline = document.getElementById("returnUnderLine");
+returnUnderline.addEventListener("mouseover",()=>{
+    let underline = document.getElementById("underLine");
+    // console.log(underline)
+    underline.style.display = "block"
+    underline.setAttribute("id","uline")
+})
+
+returnUnderline.addEventListener("mouseleave",()=>{
+    let underline = document.getElementById("underLine");
+    uline.style.display = "none"
+    uline.setAttribute("id","underLine")
+})
