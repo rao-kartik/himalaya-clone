@@ -17,15 +17,16 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35px;
+    height: 32px;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     background-color: #ff7451;
     position: relative;
 }
 
 #header > div > h4 {
     margin-right: 5px;
+    font-weight: 800;
 }
 
 #nav {
@@ -34,11 +35,11 @@ html, body {
     padding-right: 50px;
     padding-left: 50px;
     width: 100%;
-    height: 80px;
+    height: 70px;
 }
 
 #logo {
-    width: 200px;
+    width: 180px;
     height: 78px;
 }
 
@@ -202,4 +203,14 @@ i {
 
 #userDropdown > p:hover {
     color: #7777778a;
+}
+
+#commentBox {
+    position: relative;
+    top: 100px;
+}
+
+#footer {
+    position: relative;
+    top: 120px;
 }
