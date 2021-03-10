@@ -17,7 +17,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 32px;
+    height: 34px;
     color: white;
     font-size: 14px;
     background-color: #ff7451;
@@ -40,7 +40,7 @@ html, body {
 
 #logo {
     width: 180px;
-    height: 78px;
+    height: 70px;
 }
 
 #nav > div {
@@ -199,9 +199,18 @@ i {
     background-color: #ffffff;
     padding: 35px 40px 33px 40px;
     visibility: hidden;
+    box-shadow: 0 1px 5px #777777;
+    z-index: 50;
 }
 
 #userDropdown > p:hover {
+    color: #7777778a;
+}
+#userDropdown > a {
+    color: #777777;
+}
+
+#userDropdown > a:hover {
     color: #7777778a;
 }
 
