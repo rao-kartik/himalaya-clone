@@ -21,7 +21,6 @@
     grid-template-areas: 'a b'
         'a c'
         'a d';
-
 }
 
 #div1 img {
@@ -52,6 +51,7 @@
 }
 
 #div4>p {
+    font-size: 1rem;
     word-spacing: 7px;
     line-height: 25px;
     color: #777777
@@ -106,7 +106,6 @@
     margin-top: 1%;
 }
 
-
 .line {
     background-color: #48CAB2;
     height: 0.8vh;
@@ -123,6 +122,8 @@
     color: #ababab;
     font-weight: bold
 }
+
+
 
 #page2,
 #page3,

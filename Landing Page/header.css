@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'sans-serif';
+    font-family: sans-serif;
     text-decoration: none;
 }
 
@@ -107,8 +107,10 @@ i {
 /* Nav Droppdown */
 
 #navDropdown {
-    position: relative;
+    position: absolute;
     visibility: hidden;
+    width: 100%;
+    background-color: white;
     z-index: 500;
 }
 #navDropdown, #navTopD, #navBottomD{
@@ -117,7 +119,7 @@ i {
 
 #navDropdown > div:nth-child(1){
     width: 60%;
-    height: 400px;
+    height: 500px;
     padding-left: 15%;
     background: linear-gradient(45deg, #f4f7f3, #fff 70%);
 }    
@@ -183,3 +185,21 @@ i {
     text-align: center;
 }
 
+#userDropdown {
+    position: absolute;
+    right: 6%;
+    top: 100px;
+    width: 180px;
+    height: 150px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #777777;
+    background-color: #ffffff;
+    padding: 35px 40px 33px 40px;
+    visibility: hidden;
+}
+
+#userDropdown > p:hover {
+    color: #7777778a;
+}
