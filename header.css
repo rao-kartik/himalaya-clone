@@ -11,6 +11,10 @@ html, body {
     height: 100%;
 }
 
+a {
+    color: #777777;
+}
+
 /* header */
 
 #header > div {
@@ -51,6 +55,10 @@ html, body {
 
 #nav p {
     margin-left: 50px;
+}
+
+#nav p:hover {
+    cursor: pointer;
 }
 
 #slc > i {
@@ -144,6 +152,10 @@ i {
     font-size: 16px;
 }
 
+#navDropdown p:hover {
+    color: #7777778a;
+    cursor: pointer;
+}
 
 #imgBox {
     width: 300px;
@@ -198,8 +210,9 @@ i {
     background-color: #ffffff;
     padding: 35px 40px 33px 40px;
     visibility: hidden;
+    z-index: 10;
 }
 
-#userDropdown > p:hover {
+#userDropdown > a:hover, #userDropdown > p:hover {
     color: #7777778a;
 }
