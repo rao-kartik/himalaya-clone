@@ -199,10 +199,19 @@ i {
     background-color: #ffffff;
     padding: 35px 40px 33px 40px;
     visibility: hidden;
-    box-shadow: 0 1px 5px #777777
+    box-shadow: 0 1px 5px #777777;
+    z-index: 50;
 }
 
 #userDropdown > p:hover {
+    color: #7777778a;
+}
+
+#userDropdown > a {
+    color: #777777;
+}
+
+#userDropdown > a:hover {
     color: #7777778a;
 }
 

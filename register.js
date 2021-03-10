@@ -1,3 +1,18 @@
+window.addEventListener("load", ()=>{
+    let data = localStorage.getItem("userData")
+    // console.log(data)
+
+    data = JSON.parse(data)
+
+    if (data != null){
+        arr = data;
+    }
+    else {
+        arr = [];
+    }
+    console.log(arr)
+})
+
 let formRegister = document.getElementById("registerForm");
 formRegister.addEventListener("submit", registerUser);
 
@@ -13,6 +28,8 @@ function userData(firstName, lastName, email, password) {
     this.password = password
 }
 
+var arr;
+
 function registerUser(e){
     e.preventDefault();
 
@@ -25,10 +42,12 @@ function registerUser(e){
 
     let user = new userData (firstName, lastName, email, password)
     // console.log(user)
+    arr.push(user);
+    console.log(arr)
 
-    user = JSON.stringify(user);
+    arr = JSON.stringify(arr);
 
-    localStorage.setItem("userData", user);
+    localStorage.setItem("userData", arr);
 
     let fName = document.getElementById("userFirstName");
     fName.value = null;

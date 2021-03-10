@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="account.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
@@ -118,46 +119,44 @@
     <!-- user dropdown -->
 
     <div id="userDropdown">
-        <a href="login.html"><p>Sign In</p></a>
-        <a href="register.html"><p>Register</p></a>
+        <a href="account.html"><p>Account</p></a>
+        <a href="landingPage.html" id="logout"><p>Logout</p></a>
         <p>Checkout</p>
     </div>
     
     <!-- address -->
 
     <div id="address">
-        <p>Home / Account / Account</p>
+        <p>Home / Account</p>
     </div>
 
-    <!-- login -->
+    <!-- account -->
 
-    <div id="main">
-        <div id="login">
-            <p>Already Registered?</p>
-            <p>Login</p>
+    <div id="account">
+        <h1>Account</h1>
+        <div id="myAcc">
+            <h2>My Account</h2>
         </div>
-
-        <div id="errorMsg"></div>
-    
-        <div id="formDiv">
-            <form id="loginForm">
-                <label for="userEmail">Email<sup>*</sup></label>
-                <div class="required"><sup>*</sup>Required Details</div>
-                <input type="email" name="email" id="userEmail" placeholder="Enter E-mail" required>
-        
-                <label for="userPassword">Password<sup>*</sup></label>
-                <input type="password" name="password" id="userPassword" placeholder="Enter Password" required>
-        
-                <button id="button">Login</button>
-            </form>
+        <div id="orderHist">
+            <h3>Order History</h3>
+            <p>You haven't placed any orders yet.</p>
         </div>
-    
-        <p>Lost Your Password?</p>
-
-        <div id="register">
-            <P id="newCust">New Customer</P>
-            <p id="description">By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-            <a href="register.html"><button>CREATE AN ACCOUNT</button></a>
+        <div id="accDetails">
+            <h3>Account Details</h3>
+            <hr>
+            <div>
+                <p>Name:</p>
+                <p id="personName"></p>
+            </div>
+            <hr>
+            <div>
+                <p>E-mail:</p>
+                <p id="personEmail"></p>
+            </div>
+            <hr>
+        </div>
+        <div id="addrBtn">
+            <p>View Addresses (0)</p>
         </div>
     </div>
 
@@ -246,7 +245,7 @@
         </div>
     </footer>
 
-    <script src="login.js"></script>
+    <script src="account.js"></script>
     <script src="header.js"></script>
 </body>
 </html>
