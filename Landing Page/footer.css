@@ -1,5 +1,8 @@
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 html, body {
@@ -7,83 +10,71 @@ html, body {
     height: 100%;
 }
 
-footer{
-    background-color: #DCD9D4;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
-    background-blend-mode: soft-light,screen;
-    position: relative;
-    left:0;
-    bottom: 0;
+footer {
     width: 100%;
-}
-.row{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content:space-around;
-    width: 90%;
-    margin-left: 5%; 
-     margin-top: 20px;  
-     margin-bottom: 30px;  
-}
-#col1_1>h4{
-    padding-left: 27%;
-    font-size: 20px;
-}
-#col2_1>h4{
-    padding-left: 20%;
-    font-size: 20px;
-}
-#col3_1>h4{
-    font-size: 20px;
-}
-#col4>h4{
-    font-size: 20px;
-}
-li{
-    margin-bottom: 15px;
-    list-style-type:none;
-    font-family: 'Poppins', sans-serif;
-}
-.err{
-
-    position: relative; 
-}
-.err1{
-    position: absolute;
-    right: 10.2%;
-    bottom:68%;
-}
-#err2{
-    font-size: 20px;
-}
-.row2{
-    width: 80%;
-    margin-left: 12%;
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-}
-
-#row2_1{
-  box-sizing: border-box;
-  border: 1px solid black;
-}
-#row2_1>p{
+    height: 500px;
+    background-color: #eef2f0;
+    color: #777777;
     font-size: 14px;
 }
-#col3_1>p{
+
+
+#infoBox {
+    display: flex;
+    line-height: 26px;
+    padding: 40px;
+}
+
+#infoBox, #bottomBox {
+    min-width: 1050px;
+    max-width: 1050px;
+    margin: auto;
+}
+#infoBox > div {
+    width: 250px;
+}
+
+#infoBox h4 {
     font-size: 18px;
-}
-#col3_1 a{
-    color: #2f664c 
-}
-#col3_1 a:hover{
-    color: black 
-}
-#col4 a{
-    color:#122A30
-}
-#col4 a:hover{
-    color:#2f664c 
+    color: #333333;
+    margin-bottom: 10px;
 }
 
+#subsInput {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    position: relative;
+    top: -10px;
+}
 
+#a {
+    color: #a3b49b;
+}
+
+#a:hover {
+    color: #777777;
+}
+
+#bottomBox {
+    color: #888888;
+    line-height: 26px;
+    padding: 40px;
+    padding-top: 0;
+}
+
+#bottomBox > p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#bottomBox > div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #a3b49b;
+    font-size: 9.5px;
+    font-weight: 500;
+}
