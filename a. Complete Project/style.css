@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#wisdom-div {
+    width: 100%;
+    height: 50vh;
+}
+
+#wisdom-div>div {
+    width: 80%;
+    background-color: #f7f8fa;
+    height: 70%;
+    margin: auto;
+    padding: 2%;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 20% 20% 60%;
+    display: grid;
+    grid-template-areas: 'a b'
+        'a c'
+        'a d';
+}
+
+#div1 img {
+    height: 100%;
+}
+
+#div1 {
+    grid-area: a;
+}
+
+#div2 {
+    grid-area: b;
+}
+
+#div3 {
+    grid-area: c;
+}
+
+#div4 {
+    grid-area: d;
+}
+
+#div3>p {
+    font-size: 24px;
+    word-spacing: 5px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+#div4>p {
+    font-size: 1rem;
+    word-spacing: 7px;
+    line-height: 25px;
+    color: #777777
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#comments {
+    width: 80%;
+    /* border: 2px solid red; */
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    margin-top: 1%;
+}
+
+#page1,
+#page2,
+#page3,
+#page4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#page1 div,
+#page2 div,
+#page3 div,
+#page4 div {
+    width: 30%;
+    border: 2px solid rgb(245, 245, 245);
+    height: 100%;
+    padding: 2%;
+    font-size: 1.2vw;
+    margin-left: 2%;
+}
+
+#div2 h2, #div3 p,#div4 > p {
+    text-align: left;
+}
+#div2 > h2 {
+    font-size: 1.1em;
+}
+#div4 > p {
+    font-size: 0.6em;
+    margin-top: 1%;
+}
+
+.line {
+    background-color: #48CAB2;
+    height: 0.8vh;
+    width: 2.5vw;
+}
+
+.line,
+#comments div h4 {
+    margin-bottom: 5%;
+}
+
+#comments p {
+    font-size: 13px;
+    color: #ababab;
+    font-weight: bold
+}
+
+
+
+#page2,
+#page3,
+#page4 {
+    display: none;
+}
+
+#buttons {
+    text-align: center;
+    margin-top: 1%;
+}
+
+#buttons button {
+    width: 15px;
+    height: 6px;
+    outline: none;
+    border: none;
+}
+
+#expand {
+    width: 40px;
+}
+
+#normal {
+    width: 30px;
+}
+
+#buttons button:hover {
+    cursor: pointer;
+    background-color: #333333;
+}
+
+#one {
+    background-color: #48CAB2;
+}

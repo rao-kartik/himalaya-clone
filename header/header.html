@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    
     <link rel = "stylesheet" href = "uicons-regular-rounded/css/uicons-regular-rounded.css">
     <link rel = "stylesheet" href = "uicons-solid-rounded/css/uicons-solid-rounded.css">
     <title>Himalaya Wellness: Herbal Supplements, Toothpaste & More! – Himalaya Wellness (US) </title>
     <link rel="stylesheet" href="header.css">
+
+    <link rel="stylesheet" href="slideshow.css">
 </head>
-<body>
+<body> 
     <header id="header">
         <div>
             <h4>FREE SHIPPING</h4>
@@ -18,18 +22,137 @@
         <nav id="nav">
             <div>
                 <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?height=628&pad_color=ffffff&v=1591028951&width=1200" id="logo">
-                <p>Shop</p>
+                <p id="shop">Shop</p>
                 <p>About</p>
                 <p>Store Locator</p>
             </div>
             <div id="slc">
-                <i class="fi-rr-search"></i>
-                <i class="fi-rr-user" id="search"></i>
+                <i class="fi-rr-search" id="search"></i>
+                <i class="fi-rr-user" id="user"></i>
                 <i class="fi-rr-shopping-bag"></i>
             </div>
         </nav>
     </header>
+    
+    <!-- searchBox -->
+
+    <div id="searchBox">
+        <div>
+            <p>What are you looking for?</p>
+            <i class="fi-rr-cross" id="clSearch"></i>
+        </div>
+        <div>
+            <input type="text" placeholder="Search products..." id="searchInput">
+            <i class="fi-rr-search" id="searchData"></i>
+        </div>
+        <hr>
+    </div>
+
+    <!-- nav dropdown -->
+
+    <div id="navDropdown">
+        <div>
+            <div id="navTopD">
+                <div>
+                    <h4>Herbal Supplements</h4>
+                    <p>Single Herb Supplements</p>
+                    <p>Multi-ingredient Supplements</p>
+                </div>
+                <div>
+                    <h4>Oral Care</h4>
+                    <p>Adult Toothpaste</p>
+                    <p>Kids Toothpaste</p>
+                </div>
+                <div>
+                    <h4>Personal Care</h4>
+                    <p>Face Care</p>
+                    <p>cleansing Bars</p>
+                    <p>Balm</p>
+                </div>
+            </div>
+            <hr>
+            <div id="BottomD">
+                <h4>Health Interests</h4>
+                <div id="navBottomD">
+                    <div>
+                        <p>Blood Sugar</p>
+                        <p>Brain & Coginitive</p>
+                        <p>Digestion</p>
+                        <p>Energy & Vitality</p>
+                        <p>Hair Skin & Nails</p>
+                        <p>Heart & Cardio</p>
+                    </div>
+                    <div>
+                        <p>Immune Support</p>
+                        <p>Joint & Mobility</p>
+                        <p>Liver & Cleanse</p>
+                        <p>Men's Wellness</p>
+                        <p>Respiratory</p>
+                        <p>Sleep</p>
+                    </div>
+                    <div>
+                        <p>Stress & Mood</p>
+                        <p>Urinary</p>
+                        <p>Weight Management</p>
+                        <p>Women,s wellness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="imgBox">
+            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA_Ashwagandha_90ct_Carton_Bottle_410x.jpg?v=1603142607">
+
+            <div>
+                <a href="https://himalayausa.com/collections/herbal-supplements/products/organic-ashwagandha">Featured Product</a>
+            </div>
+
+            <p>Find out why everyone loves bestselling Organic Ashwagandha</p>
+        </div>
+    </div>
+
+    <!-- user dropdown -->
+
+    <div id="userDropdown">
+        <a href="login.html"><p>Sign In</p></a>
+        <a href="register.html"><p>Register</p></a>
+        <p>Checkout</p>
+    </div>
+
+    <!-- image slider -->
+
+    <div id="slideshow">
+        <div class="slide">
+            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-ashwagandha_x1024.jpg?v=1608662725">
+        </div>
+
+        <div class="slide">
+            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-whitening-complete-care-toothpaste_x1024.jpg?v=1608662725">
+        </div>
+
+        <div class="slide">
+            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-hello-set_x1024.jpg?v=1608662725">
+        </div>
+
+        <div class="slide">
+            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-slider-kidstooth_10.06.2020_0413_x1024.jpg?v=1606842867">
+        </div>
+
+        <div class="slide">
+            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-immunocare_x1024.jpg?v=1608662725">
+        </div>
+    </div>
+
+    <div id="barsDiv">
+        <span class="bars" onclick="currentSlide(1)"></span>
+        <span class="bars" onclick="currentSlide(2)"></span>
+        <span class="bars" onclick="currentSlide(3)"></span>
+        <span class="bars" onclick="currentSlide(4)"></span>
+        <span class="bars" onclick="currentSlide(5)"></span>
+    </div>
+
     <script src="https://kit.fontawesome.com/abdc4f43b6.js" crossorigin="anonymous"></script>
     <script src="header.js"></script>
+    <script src="slideshow.js"></script>
 </body>
 </html>
