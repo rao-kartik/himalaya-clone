@@ -21,7 +21,6 @@
     grid-template-areas: 'a b'
         'a c'
         'a d';
-
 }
 
 #div1 img {
@@ -52,6 +51,7 @@
 }
 
 #div4>p {
+    font-size: 1rem;
     word-spacing: 7px;
     line-height: 25px;
     color: #777777
@@ -94,13 +94,13 @@
     margin-left: 2%;
 }
 
-#line {
+.line {
     background-color: #48CAB2;
     height: 0.8vh;
     width: 2.5vw;
 }
 
-#line,
+.line,
 #comments div h4 {
     margin-bottom: 5%;
 }
@@ -109,6 +109,10 @@
     font-size: 13px;
     color: #ababab;
     font-weight: bold
+}
+
+.commentHead {
+    font-size: 18px;
 }
 
 #page2,
