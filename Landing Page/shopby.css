@@ -13,7 +13,6 @@ html, body {
 #shopSeller {
     width: 100%;
     height: auto;
-    position: relative;
 }
 
 .sHead {
@@ -53,8 +52,8 @@ html, body {
     width:103%;
     height:auto;
     display:block;
-    transform: scale3d(1.1, 1.1, 1);
-    transition: transform 1s;
+    transform: scale(1.1);
+    transition: all ease 1s;
     backface-visibility: hidden;
 }
 
@@ -80,7 +79,7 @@ html, body {
 #bestid {   
     display: flex;
     flex-direction: row;
-    width: 1050px;
+    max-width: 1050px;
     overflow-x: scroll;
     scroll-behavior: smooth;
     margin: auto;
@@ -108,4 +107,24 @@ html, body {
     font-size: 16px;
     line-height: 23px;
     font-weight: 500;
+}
+
+#imageSlider {
+    max-width: 1050px;
+    margin: auto;
+}
+
+#leftArrow {
+    cursor: pointer;
+    position: relative;
+    top: -175px;
+    left: -28px;
+}
+
+#rightArrow {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    top: -175px;
+    right: -18px
 }
