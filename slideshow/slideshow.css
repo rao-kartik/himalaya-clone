@@ -42,7 +42,7 @@ img {
     transition: background-color 1s ease;
     transition: width .1s ease;
     position: relative;
-    top: 380px;
+    top: -32px;
 }
 
 .change, .bars:hover {

@@ -91,14 +91,15 @@ html, body {
 } */
 
 #bestid > div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 245px;
-    height: auto;
+    height: 350px;
     margin-right: 20px;
 }
 
 #bestid img {
     width: 245px;
+    height: 300px;
 }
 
 #bestid h4 {
@@ -126,5 +127,5 @@ html, body {
     position: relative;
     float: right;
     top: -175px;
-    right: -18px
+    right: -28px
 }
