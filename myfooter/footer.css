@@ -7,6 +7,7 @@ footer{
     bottom:0;
     width: 100%;
     margin-bottom: 0px;
+    margin-top: 20px;
 }
 .row{
     display: flex;
@@ -14,22 +15,33 @@ footer{
     justify-content:space-around;
     width: 90%;
     margin-left: 5%; 
-     margin-top: 20px;  
-     margin-bottom: 30px;  
+    padding-top: 20px;
+     padding-bottom: 30px;  
 }
 #col1_1>h4{
-    padding-left: 27%;
+    padding-bottom: 10px;
     font-size: 20px;
 }
 #col2_1>h4{
-    padding-left: 20%;
+    padding-bottom: 10px;
     font-size: 20px;
 }
 #col3_1>h4{
+    padding-bottom: 10px;
     font-size: 20px;
 }
+#col3_1>p{
+    margin-bottom: 30px;
+}
 #col4>h4{
+    padding-bottom: 10px;
     font-size: 20px;
+}
+#col4>p{
+    margin-top: 40px;
+}
+#col4>#err2{
+    margin-top: 20px;
 }
 li{
     margin-bottom: 15px;
@@ -37,13 +49,12 @@ li{
     font-family: 'Poppins', sans-serif;
 }
 .err{
-
     position: relative; 
 }
 .err1{
     position: absolute;
-    right: 10.2%;
-    bottom:71%;
+    right: 12.5%;
+    bottom:75%;
 }
 #err2{
     font-size: 20px;
@@ -51,20 +62,22 @@ li{
 .row2{
     width: 80%;
     margin-left: 12%;
-     padding-bottom: 30px;
+    padding-bottom: 30px;
     font-family: 'Poppins', sans-serif;
 
 }
 
 #row2_1{
   box-sizing: border-box;
+  margin-top: 10px;
+  padding: 15px 10px;
   border: 1px solid black;
 }
 #row2_1>p{
     font-size: 14px;
 }
 #col3_1>p{
-    font-size: 18px;
+    font-size: 15px;
 }
 #col3_1 a{
     color: #2f664c 
