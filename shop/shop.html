@@ -1,189 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
     <title>Products - Himalaya Wellness (US)</title>
-    <link rel="stylesheet" href="shop.css">
-</head>
-
-<body>
-    <h1 id="products-head"></h1>
-    <h1>Products</h1>
-    <div id="products">
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <h4>FREE SHIPPING</h4>
+        <p>ON ALL THE ORDERS OVER $35!</p>
+      </div>
+      <nav id="nav">
         <div>
-            <div id="inside_product">
-                <li id="health_interest" class="bold">Health Interests</li>
-                <li>Blood Sugar</li>
-                <li>Brain & Congnitive</li>
-                <li>Digestion</li>
-                <li>Energy & Vitality</li>
-                <li>Hair Skin & Nails</li>
-                <li>Heart & Cardio</li>
-                <li>Immune Support</li>
-                <li>Joint & Mobility</li>
-                <li>Liver & Cleance</li>
-                <li>Men Wellness</li>
-            </div>
-
-            <div id="inside_product_2">
-                <li id="herbal_supplements" class="bold">Herbal Supplements</li>
-                <li>Single Herbs</li>
-                <li>Formulas</li>
-            </div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?height=628&pad_color=ffffff&v=1591028951&width=1200"
+            id="logo"
+          />
+          <p id="shop">Shop</p>
+          <p>About</p>
+          <p>Store Locator</p>
         </div>
-        <div>
+        <div id="slc">
+          <i class="fi-rr-search" id="search"></i>
+          <i class="fi-rr-user" id="user"></i>
+          <i class="fi-rr-shopping-bag"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- searchBox -->
+
+    <div id="searchBox">
+      <div>
+        <p>What are you looking for?</p>
+        <i class="fi-rr-cross" id="clSearch"></i>
+      </div>
+      <div>
+        <input type="text" placeholder="Search products..." id="searchInput" />
+        <i class="fi-rr-search" id="searchData"></i>
+      </div>
+      <hr />
+    </div>
+
+    <!-- nav dropdown -->
+
+    <div id="navDropdown">
+      <div>
+        <div id="navTopD">
+          <div>
+            <h4>Herbal Supplements</h4>
+            <p>Single Herb Supplements</p>
+            <p>Multi-ingredient Supplements</p>
+          </div>
+          <div>
+            <h4>Oral Care</h4>
+            <p>Adult Toothpaste</p>
+            <p>Kids Toothpaste</p>
+          </div>
+          <div>
+            <h4>Personal Care</h4>
+            <p>Face Care</p>
+            <p>cleansing Bars</p>
+            <p>Balm</p>
+          </div>
+        </div>
+        <hr />
+        <div id="BottomD">
+          <h4>Health Interests</h4>
+          <div id="navBottomD">
             <div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1595305425"
-                        alt="">
-                    <p>Back to Balance Cleanse™</p>
-                    <div class="wrapped_bag" id="item_one">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_one">$29.95</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBambooToothpaste-Tube_Front_1024x.png?v=1613065864"
-                        alt="">
-                    <p>Bamboo & Sea Salt Antiplaque Toothpaste</p>
-                    <div class="wrapped_bag" id="item_two">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_two">$29.95</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_purifying-2_1024x.png?v=1595909766"
-                        alt="">
-                    <p>Body Bar: Purifying (Neem & Turmeric)</p>
-                    <div class="wrapped_bag" id="item_three">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_three">$29.95</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_refreshing-1_1024x.png?v=1595909931"
-                        alt="">
-                    <p>Body Bar: Refreshing (Lavender & Rosemary)</p>
-                    <div class="wrapped_bag" id="item_four">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_four">$29.95</p>
-                    </div>
-                </div>
+              <p>Blood Sugar</p>
+              <p>Brain & Coginitive</p>
+              <p>Digestion</p>
+              <p>Energy & Vitality</p>
+              <p>Hair Skin & Nails</p>
+              <p>Heart & Cardio</p>
             </div>
-
-            <div class="product-spacing"></div>
-
             <div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Boswellia-60---Box-Bottle_1024x.png?v=1595862908"
-                        alt="">
-                    <p>Boswellia</p>
-                    <div class="wrapped_bag" id="item_five">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_five">$29.95</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaCharcoalToothpaste-Tube_Front_1024x.png?v=1613059882"
-                        alt="">
-                    <p>Charcoal & Black Seed Oil Antiplaque Toothpaste</p>
-                    <p class="sold"> Sold out</p>
-                    <!-- <div class="wrapped_bag" id="item_six">
+              <p>Immune Support</p>
+              <p>Joint & Mobility</p>
+              <p>Liver & Cleanse</p>
+              <p>Men's Wellness</p>
+              <p>Respiratory</p>
+              <p>Sleep</p>
+            </div>
+            <div>
+              <p>Stress & Mood</p>
+              <p>Urinary</p>
+              <p>Weight Management</p>
+              <p>Women,s wellness</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="imgBox">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA_Ashwagandha_90ct_Carton_Bottle_410x.jpg?v=1603142607"
+        />
+
+        <div>
+          <a
+            href="https://himalayausa.com/collections/herbal-supplements/products/organic-ashwagandha"
+            >Featured Product</a
+          >
+        </div>
+
+        <p>Find out why everyone loves bestselling Organic Ashwagandha</p>
+      </div>
+    </div>
+
+    <!-- user dropdown -->
+
+    <div id="userDropdown">
+      <a href="login.html">
+        <p>Sign In</p>
+      </a>
+      <a href="register.html">
+        <p>Register</p>
+      </a>
+      <p>Checkout</p>
+    </div>
+    <div id="shop-line">
+      <p>Home / Products</p>
+    </div>
+    <h1 id="products-head"></h1>
+    <h1 class="center">Products</h1>
+    <div id="sort_products">
+      <div>
+        <select name="sort_by" id="inner_sort">
+          <option value="ascending">Name Ascending</option>
+          <option value="ascending">Name Descending</option>
+          <option value="ascending">Best Selling</option>
+          <option value="ascending">Featured</option>
+          <option value="ascending">Price Ascending</option>
+          <option value="ascending">Price Descending</option>
+        </select>
+      </div>
+      <div>
+        <select name="no_of_prod" id="no_of_prod">
+          <option value="12">12</option>
+          <option value="16">16</option>
+          <option value="32">32</option>
+          <option value="All">All</option>
+        </select>
+      </div>
+      <div id="vertical_show">
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="products">
+      <div>
+        <div id="inside_product">
+          <li id="health_interest" class="bold">Health Interests</li>
+          <li>Blood Sugar</li>
+          <li>Brain & Congnitive</li>
+          <li>Digestion</li>
+          <li>Energy & Vitality</li>
+          <li>Hair Skin & Nails</li>
+          <li>Heart & Cardio</li>
+          <li>Immune Support</li>
+          <li>Joint & Mobility</li>
+          <li>Liver & Cleance</li>
+          <li>Men Wellness</li>
+        </div>
+
+        <div id="inside_product_2">
+          <li id="herbal_supplements" class="bold">Herbal Supplements</li>
+          <li>Single Herbs</li>
+          <li>Formulas</li>
+        </div>
+
+        <div id="inside_product_3">
+          <li id="oral_care" class="bold">Oral Care</li>
+          <li>Adult Toothpaste</li>
+          <li>Kids Toothpaste</li>
+        </div>
+
+        <div id="inside_product_4">
+          <li id="personal_care" class="bold">Personal Care</li>
+          <li>Face Care</li>
+          <li>Cleansing Bars</li>
+          <li>Balms</li>
+        </div>
+      </div>
+      <div>
+        <div class="clickable">
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1595305425"
+              alt=""
+            />
+            <div>Back to Balance Cleanse™</div>
+            <div class="wrapped_bag" id="item_a1">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a1">$29.95</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBambooToothpaste-Tube_Front_1024x.png?v=1613065864"
+              alt=""
+            />
+            <div>Bamboo & Sea Salt Antiplaque Toothpaste</div>
+            <div class="wrapped_bag" id="item_a2">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a2">$7.99</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_purifying-2_1024x.png?v=1595909766"
+              alt=""
+            />
+            <div>Body Bar: Purifying (Neem & Turmeric)</div>
+            <div class="wrapped_bag" id="item_a3">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a3">$4.99</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_refreshing-1_1024x.png?v=1595909931"
+              alt=""
+            />
+            <div>Body Bar: Refreshing (Lavender & Rosemary)</div>
+            <div class="wrapped_bag" id="item_a4">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a4">$4.99</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-spacing"></div>
+
+        <div class="clickable">
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Boswellia-60---Box-Bottle_1024x.png?v=1595862908"
+              alt=""
+            />
+            <div>Boswellia</div>
+            <div class="wrapped_bag" id="item_a5">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a5">$14.95</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaCharcoalToothpaste-Tube_Front_1024x.png?v=1613059882"
+              alt=""
+            />
+            <div>Charcoal & Black Seed Oil Antiplaque Toothpaste</div>
+            <!-- <p class="sold">Sold out</p> -->
+            <!-- <div class="wrapped_bag" id="item_six">
                         <button class="cart-btn">
                             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                         </button>
                         <p class="price" id="priceitem_six">$29.95</p>
                     </div> -->
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_balm_chest_boxbottle-2-1024x910_1024x.png?v=1595910071"
-                        alt="">
-                    <p>Chest Balm P.M.</p>
-                    <div class="wrapped_bag" id="item_seven">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_seven">$29.95</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-58_1024x.png?v=1595863139"
-                        alt="">
-                    <p>Chyavanprash</p>
-                    <div class="wrapped_bag" id="item_eight">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_eight">$29.95</p>
-                    </div>
-                </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_balm_chest_boxbottle-2-1024x910_1024x.png?v=1595910071"
+              alt=""
+            />
+            <div>Chest Balm P.M.</div>
+            <div class="wrapped_bag" id="item_a7">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a7">$7.99</p>
             </div>
-
-            <div class="product-spacing"></div>
-
-
-            <div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-33_1024x.png?v=1595305772"
-                        alt="">
-                    <p>Back to Balance Cleanse™</p>
-                    <div class="wrapped_bag" id="item_nine">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_nine">$29.95</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-30_1024x.png?v=1595306962"
-                        alt="">
-                    <p>Body Bar: Purifying (Neem & Turmeric)</p>
-                    <div class="wrapped_bag" id="item_ten">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_ten">$29.95</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-34_1024x.png?v=1595307275"
-                        alt="">
-                    <p>Body Bar: Purifying (Neem & Turmeric)</p>
-                    <div class="wrapped_bag" id="item_eleven">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_eleven">$29.95</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_facewash_exoliatingwwa_bottlebox_1024x.png?v=1595909354"
-                        alt="">
-                    <p>Body Bar: Refreshing (Lavender & Rosemary)</p>
-                    <div class="wrapped_bag" id="item_twelve">
-                        <button class="cart-btn">
-                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                        </button>
-                        <p class="price" id="priceitem_twelve">$29.95</p>
-                    </div>
-                </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-58_1024x.png?v=1595863139"
+              alt=""
+            />
+            <div>Chyavanprash</div>
+            <div class="wrapped_bag" id="item_a8">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a8">$13.95</p>
             </div>
+          </div>
         </div>
+
+        <div class="product-spacing"></div>
+
+        <div class="clickable">
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-33_1024x.png?v=1595305772"
+              alt=""
+            />
+            <div>Back to Balance Cleanse™</div>
+            <div class="wrapped_bag" id="item_a9">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a9">$20.95</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-30_1024x.png?v=1595306962"
+              alt=""
+            />
+            <div>Body Bar: Purifying (Neem & Turmeric)</div>
+            <div class="wrapped_bag" id="item_a10">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a10">$18.99</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-34_1024x.png?v=1595307275"
+              alt=""
+            />
+            <div>Body Bar: Purifying (Neem & Turmeric)</div>
+            <div class="wrapped_bag" id="item_a11">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a11">$22.95</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_facewash_exoliatingwwa_bottlebox_1024x.png?v=1595909354"
+              alt=""
+            />
+            <div>Body Bar: Refreshing (Lavender & Rosemary)</div>
+            <div class="wrapped_bag" id="item_a12">
+              <button class="cart-btn">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </button>
+              <p class="price" id="priceitem_a12">$8.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-spacing"></div>
+      </div>
     </div>
-</body>
-<script src="shop.js"></script>
+
+    <button class="showmore" id="showmore">Show more</button>
+    <div id="hidden-blocks" class="clickable">
+      <div class="products">
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_facewash_balancing_neem_turmeric_bottlebox_1024x.png?v=1595909161"
+                alt=""
+              />
+              <div>Face Wash: Balancing</div>
+              <div class="wrapped_bag" id="item_a13">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a13">$10.95</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_facewash_hydrating_bottlebox_1024x.png?v=1595909481"
+                alt=""
+              />
+              <div>Face Wash: Hydrating</div>
+              <div class="wrapped_bag" id="item_a14">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a14">$12.95</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/InvigoratingFaceWash_1024x.png?v=1595909620"
+                alt=""
+              />
+              <div>Face Wash: Invigorating</div>
+              <div class="wrapped_bag" id="item_a15">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a15">$11.99</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-69_1024x.png?v=1595313499"
+                alt=""
+              />
+              <div>FlorAvani®</div>
+              <div class="wrapped_bag" id="item_a16">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a16">$39.95</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-spacing"></div>
+
+          <div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-126_1024x.png?v=1600131524"
+                alt=""
+              />
+              <div>GlucoCare®</div>
+              <div class="wrapped_bag" id="item_a17">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a17">$24.95</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_1024x.png?v=1595866457"
+                alt=""
+              />
+              <div>Guggul</div>
+              <div class="wrapped_bag" id="item_six">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_six">$15.95</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_fbc92680-5171-436b-acc1-6a5a6a2ac59c_1024x.png?v=1595316719"
+                alt=""
+              />
+              <div>HeartCare®</div>
+              <div class="wrapped_bag" id="item_a19">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a19">$22.95</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOENERGYBOX_BOTTLE_1024x.jpg?v=1608243299"
+                alt=""
+              />
+              <div>Hello Energy®</div>
+              <div class="wrapped_bag" id="item_a20">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a20">$24.95</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-spacing"></div>
+
+          <div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOJOYBOX_BOTTLE_1024x.jpg?v=1608241956"
+                alt=""
+              />
+              <div>Hello Joy®</div>
+              <div class="wrapped_bag" id="item_a21">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a21">$24.95</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOPEACEBOX_BOTTLE_1024x.jpg?v=1608243907"
+                alt=""
+              />
+              <div>Hello Peace®</div>
+              <div class="wrapped_bag" id="item_a22">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a22">$24.95</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HolyBasil-30-box-bottle_1024x.png?v=1595867460"
+                alt=""
+              />
+              <div>Holy Basil</div>
+              <div class="wrapped_bag" id="item_a23">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a23">$12.95</p>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ImmunoCare-120---Box-Bottle_1024x.png?v=1595814336"
+                alt=""
+              />
+              <div>ImmunoCare®</div>
+              <div class="wrapped_bag" id="item_a24">
+                <button class="cart-btn">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </button>
+                <p class="price" id="priceitem_a24">$23.95</p>
+              </div>
+            </div>
+          </div>
+          <div id="recreate_btn"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div id="col1">
+          <div id="col1_1">
+            <h4>Info</h4>
+            <ul>
+              <li>Contact us</li>
+              <li>FAQ</li>
+              <li>Blog</li>
+              <li>Store Locator</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+        </div>
+        <div id="col2">
+          <div id="col2_1">
+            <h4>Policies</h4>
+            <ul>
+              <li>Shipping & Returns</li>
+              <li>Terms and Conditions</li>
+              <li>Privacy</li>
+              <li>CCPA</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+        </div>
+        <div id="col3">
+          <div id="col3_1">
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Email:</strong>
+              <br />
+              <strong>
+                <a href="mailto:writetous@himalayausa.com">
+                  writetous@himalayausa.com
+                </a>
+              </strong>
+            </p>
+
+            <p>
+              <strong>Phone:</strong>
+              <br />
+              <strong>
+                <a href="tel:+1-800-869-4640"> 1-800-869-4640 </a>
+              </strong>
+              <br />
+              Mon-Fri,8am-5pm CT
+            </p>
+
+            <p>
+              <strong>Mail</strong>
+              <br />
+              The Himalaya Drug Company
+              <br />
+              <strong>
+                <a
+                  href="https://www.google.com/maps/place/the+himalaya+drug+company/@29.6387398,-95.616497,17z/data=!3m1!4b1!4m5!3m4!1s0x8640e711d59a7eb7:0x6c8c321c19c108d1!8m2!3d29.6387398!4d-95.6143083"
+                >
+                  1101 Gillingham Lane
+                  <br />
+                  Sugar Land, TX 77478​
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+        <div id="col4">
+          <h4>Subscribe to Our Newsletter</h4>
+          <br />
+          <div id="err">
+            <input
+              type="email"
+              placeholder="Enter your e-mail"
+              style="height: 30px; width: 240px"
+            />
+            <span style="font-size: 2em; color: black"
+              ><i class="fas fa-envelope err1"></i
+            ></span>
+          </div>
+          <p>
+            By entering your email,you agree to
+            <br />
+            our
+            <a href="#">Terms & Conditions</a>
+            and
+            <a href="#">Privacy <br />Policy.</a>
+          </p>
+          <div id="err2">
+            <strong>Follow Us:&nbsp;&nbsp;</strong>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row2">
+        <p>
+          © 2020 The Himalaya Drug Company d/b/a Himalaya Herbal Healthcare. All
+          rights reserved.
+        </p>
+        <div id="row2_1">
+          <p>
+            <strong>
+              *THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG
+              ADMINISTRATION. THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT,
+              CURE OR PREVENT ANY DISEASE.</strong
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="shop.js"></script>
 </html>
