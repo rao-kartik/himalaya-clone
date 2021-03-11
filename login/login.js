@@ -14,15 +14,26 @@ function getLogin(e) {
     var data = localStorage.getItem("userData");
     data = JSON.parse(data);
     // console.log(data)
+    var flag = false;
+    var uEmail;
+    var uName;
+    
+    if (data == null){
+        errorMsg.innerHTML = "<ul><li>Incorrect email or password.</li></ul>";
+    }
     
     for (let i = 0; i < data.length; i++){
         if(data[i].email == email && data[i].password == password){
-            location.href = `../account/account.html?f-name=${data[i].firstName}&l-name=${data[i].lastName}&&e-mail=${data[i].email}`
+            flag = true;
+            uEmail = data[i].email;
+            uName = `${data[i].firstName} ${data[i].lastName}`;
             break;
         }
-        else {
-            errorMsg.innerHTML = "<ul><li>Incorrect email or password.</li></ul>"
-            break;
-        }
+    }
+    if (flag == true){
+        location.href = `../account/account.html?name=${uName}&&e-mail=${uEmail}`;
+    }
+    else {
+        errorMsg.innerHTML = "<ul><li>Incorrect email or password.</li></ul>";
     }
 }
