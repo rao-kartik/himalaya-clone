@@ -4,38 +4,48 @@ main{
 
 main>h1{
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
 }
 
 main>.row1{
     display: flex;
     justify-content: center;
     column-gap: 30px;
+   
 }
 
-main>.row1>div>h3,main>.row1>div>p{
+main>.row1>div>h3,main>.row1>div>p,main>.row1>div>h5{
     width: 300px;
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
 } 
+
+
 
 main>.row2{
     display: flex;
-    justify-content: center;
-    column-gap: 30px;
+    justify-content:space-around;
+   
+
 }
 
-main>.row2>div>h3,main>.row2>div>p{
+main>.row2>div>h3,main>.row2>div>p,main>.row2>div>h5{
     width: 300px;
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
 } 
 
 
 main>.row3{
     display: flex;
     justify-content: center;
-    column-gap: 30px; 
+    column-gap: 30px;
+
+   
 }
 
-main>.row3>div>h3,main>.row3>div>p{
+main>.row3>div>h3,main>.row3>div>p,main>.row3>div>h5{
     width: 300px;
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
 } 
