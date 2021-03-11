@@ -10,7 +10,7 @@ html, body {
 }
 
 #slideshow {
-    position: absolute;
+    position: relative;
 }
 
 #slideshow, .slide {

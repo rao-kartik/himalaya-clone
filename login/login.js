@@ -18,10 +18,11 @@ function getLogin(e) {
     for (let i = 0; i < data.length; i++){
         if(data[i].email == email && data[i].password == password){
             location.href = `../account/account.html?f-name=${data[i].firstName}&l-name=${data[i].lastName}&&e-mail=${data[i].email}`
+            break;
         }
         else {
             errorMsg.innerHTML = "<ul><li>Incorrect email or password.</li></ul>"
+            break;
         }
     }
-    
 }
