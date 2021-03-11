@@ -50,6 +50,10 @@ html, body {
     color: #777777;
 }
 
+#nav a {
+    color: #777777;
+}
+
 #nav p {
     margin-left: 50px;
 }

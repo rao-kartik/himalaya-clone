@@ -12,18 +12,21 @@ html, body {
 
 footer {
     width: 100%;
-    height: 500px;
+    height: 550px;
     background-color: #eef2f0;
     color: #777777;
     font-size: 14px;
 }
-
 
 #infoBox {
     display: flex;
     line-height: 26px;
     padding-top: 80px;
     padding-bottom: 60px;
+}
+
+#infoBox a {
+    color: #777777;
 }
 
 #infoBox, #bottomBox {
