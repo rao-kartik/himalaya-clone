@@ -124,3 +124,9 @@ function createBtn() {
   recreate_btn.appendChild(btn);
 }
 showmore_btn.addEventListener("click", makeMeVisible);
+
+var buy_item = document.getElementById("buy_item");
+
+buy_item.addEventListener("click", function () {
+  // location.assign("best_seller/best_seller.html");
+});
