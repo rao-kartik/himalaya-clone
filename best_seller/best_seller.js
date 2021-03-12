@@ -59,6 +59,7 @@ function card_add()
   var popup=document.getElementById('popup_container')
   popup.style.display='block'
   document.body.style.backgroundColor="#EBEBFD"
+  document.getElementById('ch1').style.backgroundColor="#EBEBFD"
   event.stopPropagation();
 }
 
@@ -66,6 +67,7 @@ document.body.addEventListener('click',function(e){
   var popup=document.getElementById('popup_container')
   popup.style.display='none'
   document.body.style.backgroundColor="white"
+  
 })
 
 btn1.addEventListener('click',fun1)
