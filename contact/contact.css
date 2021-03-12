@@ -2,15 +2,19 @@ main{
     margin: auto;
     margin-top: 20px;
     width: 80%;
-  
     margin-bottom: 20px;
+   
+    
 }
 main>h1{
     margin-left: 20px;
+    
 }
 main>#first_flex{
     display: flex;
     column-gap: 10px;
+  
+    margin-top: 20px;
 }
 #first_flex>#row1{
  
@@ -33,7 +37,7 @@ main>#first_flex{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
+    margin-top: 10px;
     margin-bottom: 16px;
     resize: vertical;
   }
@@ -49,3 +53,15 @@ main>#first_flex{
   #first_flex>#row2>#row2_form>input[type=button]:hover {
     background-color: #45a049;
   }
+
+#first_flex>#row1>h2,#first_flex>#row1>p{
+    margin-bottom: 20px;
+}
+#first_flex>#row1>p{
+    font-size: 18px;
+    color: #777777;
+}
+
+#first_flex>#row2>h2{
+    margin-bottom: 30px;
+}
