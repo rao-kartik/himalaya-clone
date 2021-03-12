@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,7 @@
     <link rel = "stylesheet" href = "../header/uicons-solid-rounded/css/uicons-solid-rounded.css">
     <title>Himalaya Wellness: Herbal Supplements, Toothpaste & More! – Himalaya Wellness (US) </title>
     <link rel="stylesheet" href="../header/header.css">
-    <link rel="stylesheet" href="../myfooter/footer.css">
+    <link rel="stylesheet" href="../footer/footer.css">
     <link rel="stylesheet" href="best_seller.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -17,17 +16,26 @@
     
 </head>
 <body>
-    <header id="header">
-        <div>
-            <h4>FREE SHIPPING</h4>
-            <p>ON ALL THE ORDERS OVER $35!</p>
-        </div>
+    <header id="header" class="hides">
+      <div>
+        <h4>FREE SHIPPING</h4>
+        <p>ON ALL THE ORDERS OVER $35!</p>
+      </div>
         <nav id="nav">
             <div>
                 <a href="../Landing Page/landingPage.html"><img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?height=628&pad_color=ffffff&v=1591028951&width=1200" id="logo"></a>
-                <p id="shop"><a href="../shop/shop.html">Shop</a></p>
-                <p><a href="../about/about.html">About</a></p>
-                <p><a href="../store/store.html">Store Locator</a></p>
+                <div id="shopDiv">
+                    <p id="shop" class="navP"><a href="../shop/shop.html">Shop</a></p>
+                    <div class="navLine"></div>
+                </div>
+                <div id="aboutDiv">
+                    <p class="navP"><a href="../about/about.html">About</a></p>
+                    <div class="navLine"></div>
+                </div>
+                <div id="storeDiv">
+                    <p class="navP"><a href="../store/store.html">Store Locator</a></p>
+                    <div class="navLine"></div>
+                </div>
             </div>
             <div id="slc">
                 <i class="fi-rr-search" id="search"></i>
@@ -36,131 +44,138 @@
             </div>
         </nav>
     </header>
-    
+
     <!-- searchBox -->
 
-    <div id="searchBox">
-        <div>
-            <p>What are you looking for?</p>
-            <i class="fi-rr-cross" id="clSearch"></i>
-        </div>
-        <div>
-            <input type="text" placeholder="Search products..." id="searchInput">
-            <i class="fi-rr-search" id="searchData"></i>
-        </div>
-        <hr>
+    <div id="searchBox" class="hides">
+      <div>
+        <p>What are you looking for?</p>
+        <i class="fi-rr-cross" id="clSearch"></i>
+      </div>
+      <div>
+        <input type="text" placeholder="Search products..." id="searchInput" />
+        <i class="fi-rr-search" id="searchData"></i>
+      </div>
+      <hr />
     </div>
 
     <!-- nav dropdown -->
 
-    <div id="navDropdown">
-        <div>
-            <div id="navTopD">
-                <div>
-                    <h4>Herbal Supplements</h4>
-                    <p>Single Herb Supplements</p>
-                    <p>Multi-ingredient Supplements</p>
-                </div>
-                <div>
-                    <h4>Oral Care</h4>
-                    <p>Adult Toothpaste</p>
-                    <p>Kids Toothpaste</p>
-                </div>
-                <div>
-                    <h4>Personal Care</h4>
-                    <p>Face Care</p>
-                    <p>cleansing Bars</p>
-                    <p>Balm</p>
-                </div>
-            </div>
-            <hr>
-            <div id="BottomD">
-                <h4>Health Interests</h4>
-                <div id="navBottomD">
-                    <div>
-                        <p>Blood Sugar</p>
-                        <p>Brain & Coginitive</p>
-                        <p>Digestion</p>
-                        <p>Energy & Vitality</p>
-                        <p>Hair Skin & Nails</p>
-                        <p>Heart & Cardio</p>
-                    </div>
-                    <div>
-                        <p>Immune Support</p>
-                        <p>Joint & Mobility</p>
-                        <p>Liver & Cleanse</p>
-                        <p>Men's Wellness</p>
-                        <p>Respiratory</p>
-                        <p>Sleep</p>
-                    </div>
-                    <div>
-                        <p>Stress & Mood</p>
-                        <p>Urinary</p>
-                        <p>Weight Management</p>
-                        <p>Women,s wellness</p>
-                    </div>
-                </div>
-            </div>
+    <div id="navDropdown" class="hides">
+      <div>
+        <div id="navTopD">
+          <div>
+            <h4>Herbal Supplements</h4>
+            <p>Single Herb Supplements</p>
+            <p>Multi-ingredient Supplements</p>
+          </div>
+          <div>
+            <h4>Oral Care</h4>
+            <p>Adult Toothpaste</p>
+            <p>Kids Toothpaste</p>
+          </div>
+          <div>
+            <h4>Personal Care</h4>
+            <p>Face Care</p>
+            <p>cleansing Bars</p>
+            <p>Balm</p>
+          </div>
         </div>
-
-        <div id="imgBox">
-            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA_Ashwagandha_90ct_Carton_Bottle_410x.jpg?v=1603142607">
-
+        <hr />
+        <div id="BottomD">
+          <h4>Health Interests</h4>
+          <div id="navBottomD">
             <div>
-                <a href="https://himalayausa.com/collections/herbal-supplements/products/organic-ashwagandha">Featured Product</a>
+              <p>Blood Sugar</p>
+              <p>Brain & Coginitive</p>
+              <p>Digestion</p>
+              <p>Energy & Vitality</p>
+              <p>Hair Skin & Nails</p>
+              <p>Heart & Cardio</p>
             </div>
-
-            <p>Find out why everyone loves bestselling Organic Ashwagandha</p>
+            <div>
+              <p>Immune Support</p>
+              <p>Joint & Mobility</p>
+              <p>Liver & Cleanse</p>
+              <p>Men's Wellness</p>
+              <p>Respiratory</p>
+              <p>Sleep</p>
+            </div>
+            <div>
+              <p>Stress & Mood</p>
+              <p>Urinary</p>
+              <p>Weight Management</p>
+              <p>Women,s wellness</p>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div id="imgBox">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA_Ashwagandha_90ct_Carton_Bottle_410x.jpg?v=1603142607"
+        />
+
+        <div>
+          <a
+            href="https://himalayausa.com/collections/herbal-supplements/products/organic-ashwagandha"
+            >Featured Product</a
+          >
+        </div>
+
+        <p>Find out why everyone loves bestselling Organic Ashwagandha</p>
+      </div>
     </div>
 
     <!-- user dropdown -->
 
-    <div id="userDropdown">
-        <a href="../login/login.html"><p>Sign In</p></a>
-        <a href="../register/register.html"><p>Register</p></a>
-        <p>Checkout</p>
+    <div id="userDropdown" class="hides">
+      <a href="../login/login.html"><p>Sign In</p></a>
+      <a href="../register/register.html"><p>Register</p></a>
+      <p>Checkout</p>
     </div>
-    <main>
-        <div style="background-color:rgb(245, 240, 226); padding: 5px 20px; font-family: 'Poppins', sans-serif; font-size: 14px;" id="ch1">Home&nbsp;/&nbsp; Organic Ashwagandha</div>
+
+
+    <main >
+        <div style="background-color:#F7F7F7; padding: 5px 20px; font-family: 'Poppins', sans-serif; font-size: 12px;" id="ch1" class="hides"> Home&nbsp;/&nbsp; Organic Ashwagandha</div>
     <div id="main_best">
         <div id="row1">
-            <div id="row1_1">
+            <div id="row1_1" class="hides">
                 <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-61_1024x1024.png?v=1595860992" style="width: 300px;">
             </div>
-            <div id="row1_2">
+            <div id="row1_2" class="hides">
             <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Ashwagandha_BoxBottle_30_300x.jpg?v=1595860992" style="width: 100px;">
             <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Ashwagandha-2_300x.png?v=1595860982"  style="width: 100px; height:initial">
             <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Ashwagandha_BoxBottle_30_300x.jpg?v=1595860992" style="width: 100px;">
             <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Ashwagandha-2_300x.png?v=1595860982"  style="width: 100px; height:initial">
             </div>
         </div>
-        <div id="row2">
-           <h1>Organic Ashwaganda<br>$<span id="span_init">29.95</span></h1>
+        <div id="row2" >
+           <h1 class="hides">Organic Ashwaganda <br><span id="span_init">$29.95</span></h1>
            <p>Size:<span id="span_1">90</span>Caplets</p>
-           <button id="btn1" value=30>30 Caplets</button>
-           <button id="btn2" value=60>60 Caplets</button>
-           <button id="btn3" value=90>90 Caplets</button>
+           <button id="btn1" value=30 class="caplets">30 Caplets</button>
+           <button id="btn2" value=60 class="caplets">60 Caplets</button>
+           <button id="btn3" value=90 class="caplets">90 Caplets</button>
            <br><br>
            <button id="btn4">-</button>
-           <span id="span_2">0</span>
+           <span id="span_2">1</span>
            <button id="btn5">+</button>&nbsp;&nbsp;
-           <button id="btn6"><i class="fas fa-shopping-bag"></i>&nbsp;&nbsp; ADD TO CART</button><br><br>
+           <button id="btn6" class="hides"><i class="fas fa-shopping-bag"></i>&nbsp;&nbsp; ADD TO CART</button><br><br>
            <div id="popup_container">
                <h3>Added to cart successfully</h3>
                <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-61_1024x1024.png?v=1595860992"  style="width: 100px;">
                <h4>Organic Ashwagandha</h4>
                <p>30 Caplets</p>
-               <p>4 x $13.95</p>
+               <p>1 x $13.95</p>
                <hr>
-               <h4>There are 6 items</h4>
+               <h4>There is 1 item <br> in your cart</h4>
                <p>Total:$13.95</p>
                <button class="pop_btn">Continue Shopping</button><br>
                <button class="pop_btn1">View cart</button><br>
                <button class="pop_btn">Process to checkout</button>
            </div>
-            <button id="btn7"> Buy it now</button><br><br>
-            <button type="button" class="collapsible">description </button>
+            <button id="btn7" class="hides"> Buy it now</button><br><br>
+            <button type="button" class="collapsible hides">Description </button>
             <div class="content"><br>
                 <p><span style="font-size: 6px; margin-right: 5px;"><i class="fas fa-circle"></i></span>Organic Ashwagandha root powder and root extract in a time-saving 2-month supply</p>
                 <p><span style="font-size: 6px; margin-right: 5px;"><i class="fas fa-circle"></i></span>Certified USDA Organic, Non-GMO Project verified and Vegan, with no Wheat, Corn, Soy or Dairy</p>
@@ -169,8 +184,8 @@
                 <p><span style="font-size: 6px; margin-right: 5px;"><i class="fas fa-circle"></i></span>Promotes deeper levels of relaxation for occasional sleeplessness*</p>  
             </div>
 
-            <button type="button" class="collapsible">Recommended Use </button>
-            <div class="content"><br>
+            <button type="button" class="collapsible hides">Recommended Use </button>
+            <div class="content" class="hides"><br>
             <span style="font-size: 30px;"><i class="far fa-calendar-alt"></i></span>
             <table>
                 <tr>
@@ -189,7 +204,7 @@
               <span style="font-size: 30px;"><i class="fas fa-capsules"></i></span>
               <h3 style="display:inline; margin-left: 10px;">Adults take 1 caplet per day before food</h3>
             </div>
-            <button type="button" class="collapsible">What's In It</button>
+            <button type="button" class="collapsible hides">What's In It</button>
             <div class="content"><br>
                 <p>Ashwagandha has been used for centuries for stress and energy. It’s one of history’s most famous balancing herbs. In a fast-paced world, Himalaya Organic Ashwagandha keeps you going on busy days, and relaxes you during nights of occasional sleeplessness.*</p>
                 <p>Himalaya Organic Ashwagandha is not just a simple crushed Ashwagandha powder, but an actual clinically-studied extract that provides stress relief by supporting your adrenals and balancing cortisol, so you can help sustain your daily energy levels without caffeine and without feeling jittery.*</p>
@@ -227,102 +242,87 @@
         </div>
     </div>
     </main>
-     <footer>
-          <div class="row">
-              <div id="col1">
-                  <div id="col1_1">
-                     <h4>Info</h4>
-                     <ul>
-                        <li>Contact us</li>
-                        <li>FAQ</li>
-                        <li>Blog</li>
-                        <li>Store Locator</li>
-                        <li>Careers</li>
-                     </ul>
-                  </div>
-              </div>
-              <div id="col2">
-                  <div id="col2_1">
+    <footer id="footer">
+            <div id="infoBox">
+                <div id="infoRow">
+                    <h4>Info</h4>
+                    <p><a href="../contact/contact.html">Contact Us</a></p>
+                    <p><a href="../FAQ/faq.html">FAQ</a></p>
+                    <p>Blog</p>
+                    <p>Store Locator</p>
+                    <p><a href="../Careers/career.html">Careers</a></p>
+                </div>
+        
+                <div id="infoPolicies">
                     <h4>Policies</h4>
-                    <ul>
-                       <li>Shipping & Returns</li>
-                       <li>Terms and Conditions</li>
-                       <li>Privacy</li>
-                       <li>CCPA</li>
-                       <li>Accessibility</li>
-                    </ul>
-                  </div>
-              </div>
-              <div id="col3">
-                <div id="col3_1">
+                    <p>Shipping & Retutrns</p>
+                    <p>Terms & Conditions</p>
+                    <p>CCPA</p>
+                    <p>Accessibility</p>
+                </div>
+                    
+                <div id="infoContact">
                     <h4>Contact Us</h4>
                     <p>
-                        <strong>Email:</strong>
-                        <br>
-                        <strong>
-                            <a href="mailto:writetous@himalayausa.com">
-                                writetous@himalayausa.com  
-                            </a>
-                        </strong>   
+                        <strong>Email</strong><br>
+                        <strong><a id="a" href="mailto:writetous@himalayausa.com">
+                            writetous@himalayausa.com  
+                        </a></strong>
                     </p>
-                  
+                    
                     <p>
-                        <strong>Phone:</strong>
-                        <br>
-                        <strong>
-                            <a href="tel:+1-800-869-4640">
-                                1-800-869-4640
-                            </a>
-                       </strong>
-                        <br>
+                        <strong>Phone</strong><br>
+                        <strong><a id="a" href="tel:+1-800-869-4640">
+                            1-800-869-4640
+                        </a></strong><br>
                         Mon-Fri,8am-5pm CT
                     </p>
-                 
-                   <p>
-                       <strong>Mail</strong>
-                       <br>
-                       The Himalaya Drug Company
-                       <br>
-                       <strong>
-                           <a href="https://www.google.com/maps/place/the+himalaya+drug+company/@29.6387398,-95.616497,17z/data=!3m1!4b1!4m5!3m4!1s0x8640e711d59a7eb7:0x6c8c321c19c108d1!8m2!3d29.6387398!4d-95.6143083">
+        
+                    <p>
+                        <strong>Mail</strong>
+                        <br>
+                        The Himalaya Drug Company
+                        <br>
+                        <strong>
+                            <a id="a" href="https://www.google.com/maps/place/the+himalaya+drug+company/@29.6387398,-95.616497,17z/data=!3m1!4b1!4m5!3m4!1s0x8640e711d59a7eb7:0x6c8c321c19c108d1!8m2!3d29.6387398!4d-95.6143083">
                             1101 Gillingham Lane
                             <br>
                             Sugar Land, TX 77478​
-                           </a>
-                       </strong>
-
-                   </p>
-                  </div>
-              </div>
-              <div id="col4">
-                  <h4>Subscribe to Our Newsletter</h4>
-                  <br>
-                  <div id="err">
-                    <input type="email" placeholder="Enter your e-mail" style="height:30px; width: 240px;" >
-                    <span style="font-size: 2em; color:black;"><i class="fas fa-envelope err1"></i></span>
-                  </div>
-                   <p>
-                       By entering your email,you agree to
-                       <br> our
-                       <a href="#">Terms & Conditions</a> 
-                       and 
-                       <a href="#">Privacy <br>Policy.</a>
-                   </p>
-                   <div id="err2">
-                      <strong>Follow Us:&nbsp;&nbsp;</strong>
-                      <i class="fab fa-facebook-square"></i>
-                      <i class="fab fa-twitter"></i>
-                      <i class="fab fa-instagram"></i>
-                      <i class="fab fa-youtube"></i>
-                   </div>
-              </div>
-          </div>
-          <div class="row2">
-              <p>  © 2020 The Himalaya Drug Company d/b/a Himalaya Herbal Healthcare. All rights reserved.</p>
-              <div id="row2_1">
-             <p><strong> *THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.</strong> </p> 
-              </div>
-          </div>
+                            </a>
+                        </strong>
+                    </p>
+                </div>
+        
+                <div id="infoSubscribe">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <br>
+                    <div>
+                        <input type="email" placeholder="Enter your e-mail" id="subsInput">
+                        <span style="font-size: 2em; color:black;"><i class="fas fa-envelope" id="envelope"></i></span>
+                    </div>
+                    <p>
+                        By entering your email,you agree to
+                        <br> our
+                        <a id="a" href="#">Terms & Conditions</a> 
+                        and 
+                        <a id="a" href="#">Privacy <br>Policy.</a>
+                    </p>
+                    <div>
+                        <strong>Follow Us:&nbsp;&nbsp;</strong>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="bottomBox">
+                <p>© 2020 The Himalaya Drug Company d/b/a Himalaya Herbal Healthcare. All rights reserved.</p>
+                <div>
+                    <p>*THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.</p> 
+                </div>
+            </div>
         </footer>
     <script src="https://kit.fontawesome.com/abdc4f43b6.js" crossorigin="anonymous"></script>
     <script src="../header/header.js"></script>
