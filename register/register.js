@@ -44,8 +44,10 @@ function registerUser(e){
 
     let usrData = localStorage.getItem("userData");
     usrData = JSON.parse(usrData);
-    // console.log(usrData)
-    
+    if (usrData == null){
+        usrData = [];
+    }
+    // if(userData ==)
     let errMsg = document.getElementById("errMsg");
 
     var flag =false;
