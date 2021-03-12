@@ -123,3 +123,8 @@ sup {
     transition: scale(1, 1);  
     transition: transform 01s ease;
 }
+
+#errMsg {
+    color: #ff0000;
+    font-size: 18px;
+}
