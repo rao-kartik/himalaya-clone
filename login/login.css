@@ -13,12 +13,12 @@ html, body {
 
 #address {
     width: 100%;
-    line-height: 22px;
+    line-height: 30px;
     padding-left: 50px;
     padding-right: 50px;
     color: #777777;
     background-color: #f7f8fa;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 #login > p:nth-child(1){
