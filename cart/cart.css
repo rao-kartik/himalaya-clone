@@ -37,3 +37,28 @@ html, body {
     line-height: 28px;
     color: #777777;
 }
+
+#shoppingBtn {
+    color: #333333;
+    font-size: 14px;
+    border: none;
+    line-height: 33px;
+    font-weight: 500;
+    height: 44px;
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-top: 30px;
+    min-width: 180px;
+    margin-left: 10px;
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+}
+
+#shoppingBtn:hover {
+    cursor: pointer;
+    border: 2px solid #333333;
+}
+
+#cartHidden {
+    display: none;
+}

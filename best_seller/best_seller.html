@@ -40,7 +40,7 @@
             <div id="slc">
                 <i class="fi-rr-search" id="search"></i>
                 <i class="fi-rr-user" id="user"></i>
-                <i class="fi-rr-shopping-bag"></i>
+                <i class="fi-rr-shopping-bag" id="cartItem"></i>
             </div>
         </nav>
     </header>
@@ -132,7 +132,13 @@
     <div id="userDropdown" class="hides">
       <a href="../login/login.html"><p>Sign In</p></a>
       <a href="../register/register.html"><p>Register</p></a>
-      <p>Checkout</p>
+      <a href="../cart/cart.html"><p>Checkout</p></a>
+    </div>
+
+    <!-- cart dropdown -->
+
+    <div id="cartDropdown">
+      <a href="../cart/cart.html"><p>No Products in the cart</p></a>
     </div>
 
 
@@ -151,7 +157,7 @@
             </div>
         </div>
         <div id="row2" >
-           <h1 class="hides">Organic Ashwaganda <br><span id="span_init">$29.95</span></h1>
+           <h1 class="hides" id="organicAshw">Organic Ashwaganda <br><span id="span_init">$29.95</span></h1>
            <p>Size:<span id="span_1">90</span>Caplets</p>
            <button id="btn1" value=30 class="caplets">30 Caplets</button>
            <button id="btn2" value=60 class="caplets">60 Caplets</button>
@@ -165,13 +171,13 @@
                <h3>Added to cart successfully</h3>
                <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-61_1024x1024.png?v=1595860992"  style="width: 100px;">
                <h4>Organic Ashwagandha</h4>
-               <p>30 Caplets</p>
-               <p>1 x $13.95</p>
+               <p id="caplets">30 Caplets</p>
+               <p id="totalItem">1 x $13.95</p>
                <hr>
                <h4>There is 1 item <br> in your cart</h4>
-               <p>Total:$13.95</p>
+               <p id="totalPrice">Total:$13.95</p>
                <button class="pop_btn">Continue Shopping</button><br>
-               <button class="pop_btn1">View cart</button><br>
+               <button class="pop_btn1" id="viewCart">View cart</button><br>
                <button class="pop_btn">Process to checkout</button>
            </div>
             <button id="btn7" class="hides"> Buy it now</button><br><br>
