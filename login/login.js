@@ -37,3 +37,17 @@ function getLogin(e) {
         errorMsg.innerHTML = "<ul><li>Incorrect email or password.</li></ul>";
     }
 }
+
+let lostPassword = document.getElementById("lostPassword");
+lostPassword.addEventListener("mouseover",()=>{
+    let underline = document.getElementById("underLine");
+    // console.log(underline)
+    underline.style.display = "block"
+    underline.setAttribute("id","uline")
+})
+
+lostPassword.addEventListener("mouseleave",()=>{
+    let underline = document.getElementById("underLine");
+    uline.style.display = "none"
+    uline.setAttribute("id","underLine")
+})

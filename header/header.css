@@ -54,14 +54,33 @@ html, body {
     color: #777777;
 }
 
-#nav p {
-    margin-left: 50px;
-}
-
 #slc > i {
     font-size: 20px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#shopDiv, #aboutDiv, #storeDiv {
+    width: auto;
+    margin-left: 50px;
+    position: relative;
+    top: 12px;
+}
+
+.navP {
+    margin-bottom: 23px;
+}
+
+.navLine, .navLineHov {
+    width: 100%;
+    height: 2px;
+    background-color: #a3b49b;
+    display: none;
+}
+
+.navLineHov {
+    transition: scale(1, 1);  
+    transition: transform 1s ease;
 }
 
 /* Search Box */

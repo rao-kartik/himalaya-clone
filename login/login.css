@@ -128,3 +128,22 @@ sup {
     color: red;
     padding-left: 15px;
 }
+
+#main a {
+    color: #333333;
+}
+
+#underLine, #uline {
+    width: 140px;
+    outline: none;
+    border: none;
+    height: 2px;
+    background: black;
+    margin-top: -3px;
+    display: none;
+}
+
+#uline {
+    transition: scale(1, 1);  
+    transition: transform 01s ease;
+}
