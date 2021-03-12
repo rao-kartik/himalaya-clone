@@ -144,6 +144,15 @@ img + p + div {
   color: rgb(142, 160, 140);
   font-weight: 500;
 }
+
+.cart-price {
+  margin-top: 13%;
+  margin-left: 10%;
+  font-family: "Poppins";
+  color: rgb(142, 160, 140);
+  font-weight: 600;
+}
+
 .clickable p {
   font-size: 1em;
   font-weight: bold;
@@ -169,10 +178,12 @@ img + p + div {
   cursor: pointer;
 }
 
-.wrapped_bag {
+.wrapped_bag,
+.cart_bag {
   position: relative;
   display: flex;
 }
+
 .zindex {
   color: white;
   z-index: 200;
