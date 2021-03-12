@@ -134,10 +134,11 @@ btn6.addEventListener("click", ()=>{
   let totalPrice = document.getElementById("totalPrice");
   totalPrice.textContent = `Total: $${total}`;
 
-  var imag = document.getElementById("row1_1").innerHTML;
+  var imag = document.querySelector("#row1_1 > img");
+  var imgLink = imag.getAttribute("src");
 
   let itemData = {
-    image : imag,
+    image : imgLink,
     name : organicAshw,
     caplets: caplet,
     quantity: totQuan,

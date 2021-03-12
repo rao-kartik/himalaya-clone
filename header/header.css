@@ -253,7 +253,7 @@ i {
     right: 4%;
     top: 100px;
     width: 350px;
-    height: 150px;
+    height: auto;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -263,9 +263,6 @@ i {
     visibility: hidden;
     box-shadow: 0 1px 5px #777777;
     z-index: 50;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #cartDropdown > p{
@@ -278,4 +275,87 @@ i {
 
 #cartDropdown a {
     color: #777777;
+}
+
+/* cart dropdown content */
+
+#dataDiv {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+#imgDiv {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#imgDiv > img {
+    width: 100%;
+}
+
+#contentDiv {
+    width: 130px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#contentDiv > h2 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#contentDiv > h2:hover {
+    color: #a3b49b;   
+    cursor: pointer; 
+}
+
+#contentDiv > p{
+    font-size: 16px;
+}
+
+.fi-rr-trash {
+    font-size: 35px;
+    position: relative;
+    top: 30px;
+}
+
+#cartHead {
+    font-size: 18px;
+    line-height: 1;
+    color: #333333;
+    padding-bottom: 20px;
+}
+
+#total {
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 25px;
+    border-top: 1px solid #ebebeb;
+    line-height: 22px;
+    color: #333333;
+}
+
+#proceedBtn {
+    width: 100%;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #a3b49b;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+#viewCart {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 25px;
 }
