@@ -4,6 +4,8 @@ search.addEventListener("click", searchBox);
 var search = document.getElementById("searchBox");
 function searchBox(){
     search.style.display = "block";
+    cartDropdown.style.visibility = "hidden";
+    userDropdown.style.visibility = "hidden";
 }
 
 // close search
@@ -54,6 +56,7 @@ let userDropdown = document.getElementById("userDropdown")
 
 function userOptions() {
     userDropdown.style.visibility = "visible";
+    cartDropdown.style.visibility = "hidden";
 }
 
 userDropdown.addEventListener("mouseleave", ()=>{
@@ -98,4 +101,18 @@ pEle[2].addEventListener("mouseover", ()=>{
 pEle[2].addEventListener("mouseleave", ()=>{
     storeDiv.style.display = "none";
     storeDiv.setAttribute("class","navLine");
+})
+
+// cart
+
+let cartItem = document.getElementById("cartItem");
+let cartDropdown = document.getElementById("cartDropdown");
+
+cartItem.addEventListener("click", ()=>{
+    cartDropdown.style.visibility = "visible";
+    userDropdown.style.visibility = "hidden";
+})
+
+cartDropdown.addEventListener("mouseleave", ()=>{
+    cartDropdown.style.visibility = "hidden";
 })
