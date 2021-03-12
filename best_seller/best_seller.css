@@ -154,7 +154,7 @@ main>#main_best>#row2>#popup_container{
     position: absolute;
     right: 34%;
     top: 18%;
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 5px 5px 50px #000;
     z-index: 10001;
     transition-timing-function: ease-in;
 }
