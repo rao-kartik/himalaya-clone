@@ -236,6 +236,10 @@ img + div:hover {
   display: none;
 }
 
+a:visited {
+  color: black;
+}
+
 #vertical_show {
   margin-top: 5px;
   height: 1.5vh;
