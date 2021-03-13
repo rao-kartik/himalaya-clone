@@ -309,3 +309,10 @@ main > #related_main > #row4 {
   background-color: #66765f !important;
   transition: 0.3s ease-in-out;
 }
+
+a:visited {
+  color: white;
+}
+a:link {
+  color: white;
+}
