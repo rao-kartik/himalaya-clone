@@ -1,5 +1,4 @@
 var pay = document.getElementById("pay-btn");
-var obj = {};
 function paymentPage() {
   var email = document.getElementById("email");
   var add = document.getElementById("u_address");
@@ -12,5 +11,6 @@ function paymentPage() {
     zip: zip.value,
   };
   localStorage.setItem("data", JSON.stringify(obj));
-  location.assign("/payment.html");
+  console.log(obj);
+  // location.assign("/payment.html");
 }
