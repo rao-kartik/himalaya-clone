@@ -1,0 +1,138 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+.container
+{
+    
+   
+    position: relative;
+    background-image:url(https://i.shgcdn.com/f95290db-d02e-433c-9564-4766788d684c/-/format/auto/-/preview/3000x3000/-/quality/lighter/);
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.container .inner
+{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+.container .inner h1
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 70px;
+}
+#btn
+{
+  margin: auto;
+  margin-left: 80px;
+  border-bottom: 1px solid red;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  padding: 20px;
+  margin-top: 30px;
+}
+#btn>div
+{
+  border: none;
+  margin-left: 25px;
+  color: rgb(5, 146, 92);
+  width: 18%;
+}
+.container .inner p
+{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+
+}
+.imgclass
+{
+  width: 500px;
+  height: 350px;
+}
+#story 
+{
+  margin-left: 80px;
+  display: flex;
+  max-width: 1400px;
+  flex-wrap: wrap;
+  max-height:  700px;
+ position: relative;
+}
+#story div{
+  max-width: 45%;
+  margin-left: 50px;
+  margin-top: 20px;
+  
+}
+.hclass
+{
+  color: teal;
+}
+.pclass
+{
+  color: gray;
+  font-family:  'Arial Narrow Bold';
+  font-weight: 200;
+  font-size: 20px;
+  margin:10px
+}
+#roots
+{
+  display: flex;
+  flex-direction: row;
+  max-width: 1400px;
+  margin-left: 80px;  
+}
+#roots>div
+{
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.processflex1
+{
+  display: flex;
+  flex-direction: row;
+  max-width: 1400px;
+  margin-left: 80px;
+}
+.processflex1>div{
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.display
+{
+  display: none !important;
+}
+.backdisplay
+{
+  background-color: teal;
+  color:white !important;
+  text-align: center;
+  border-top: 2px solid red !important;
+  border-left: 1px solid red !important;
+  border-right: 1px solid red !important;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  margin-top: -20px;
+}
