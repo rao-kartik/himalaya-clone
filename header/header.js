@@ -192,7 +192,11 @@ else {
 
     let proceedBtn = document.createElement("button");
     proceedBtn.setAttribute("id", "proceedBtn");
-    proceedBtn.innerHTML = "PROCEED TO CHECKOUT"
+    proceedBtn.innerHTML = "PROCEED TO CHECKOUT";
+    proceedBtn.style.cursor = "pointer";
+    proceedBtn.addEventListener("click", ()=>{
+        location.href = "../Payment/user_info.html"
+    })
 
     let viewCart = document.createElement("p");
     viewCart.setAttribute("id", "viewCart");
