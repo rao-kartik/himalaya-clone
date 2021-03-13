@@ -1,10 +1,14 @@
-var user_data = localStorage.getItem("data");
-var user_data = JSON.parse(user_data);
-var assign_email = document.getElementById("assign_email");
-assign_email.textContent = user_data.email;
-var add = document.getElementById("add");
-add.textContent = user_data.adr + ", " + user_data.city + ", " + user_data.zip;
-var finalstep = document.getElementById("finalstep-btn");
+setTimeout(function () {
+  var user_d = localStorage.getItem("data");
+  var user_data = JSON.parse(user_d);
+  console.log(user_data);
+  var assign_email = document.getElementById("assign_email");
+  assign_email.textContent = user_data.email;
+  var add = document.getElementById("add");
+  add.textContent =
+    user_data.adr + ", " + user_data.city + ", " + user_data.zip;
+  var finalstep = document.getElementById("finalstep-btn");
+}, 200);
 
 function paymentDone() {
   var inputs = document.querySelectorAll("input");
