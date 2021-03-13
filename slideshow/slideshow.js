@@ -24,3 +24,8 @@ function slideshow(n) {
     images[counter-1].style.display = "block";  
     bars[counter-1].className += " change";
 }
+
+var btn = document.querySelector(".shopButton");
+btn.addEventListener("click", ()=>{
+    location.href = "../best_seller/best_seller.html";
+})
