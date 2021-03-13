@@ -9,7 +9,7 @@ footer{
     bottom:0;
     width: 100%;
     margin-bottom: 0px;
-    margin-top: 20px;
+    padding-top: 40px;
 }
 .row{
     display: flex;
@@ -55,8 +55,9 @@ li{
 }
 .err1{
     position: absolute;
-    right: 12.5%;
-    bottom:75%;
+    right: 12.2%;
+    bottom:69.4%;
+    color: #777777;
 }
 #err2{
     font-size: 20px;
