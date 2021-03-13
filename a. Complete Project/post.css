@@ -1,0 +1,36 @@
+#post{
+    padding-top: 13%;
+    width: 80%;
+    margin: auto;
+}
+
+#post>#post1>p{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    padding-left: 50px;
+}
+#post>#post1>div{
+   display: inline;
+   margin-left: 700px;
+}
+#post>#post1>div>#span2,#post>#post1>div>#span1{
+    font-size: 40px;
+    padding-left: 10px;
+    
+}
+#post>#post2{
+    display: flex;
+    justify-content:space-evenly;
+    column-gap: 20px;
+    align-items: center;
+}
+#post>#post2{
+  padding-top: 40px;
+  padding-left: 50px;
+}
+#post>#post2>div>img{
+    width:250px
+}
+

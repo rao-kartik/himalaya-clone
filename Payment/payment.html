@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - Himalaya Wellness (US) - Checkout</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+        <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/png">
+    <link rel="stylesheet" href="../Payment/payment.css" />
+    <link rel="stylesheet" href="../Payment/user_info.css" />
+  </head>
+
+  <body>
+    <div id="order_info">
+      <div>
+        <a href="../Landing Page/landingPage.html"><img
+          src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?2326"
+        /></a>
+        <div class="link-address">
+          Cart > Information > <span style="font-weight: 500"> Payment </span>
+        </div>
+        <div id="details">
+          <div>
+            <p class="gap">Contact</p>
+            <p id="assign_email"></p>
+            <hr style="width: 90%; margin-left: 2%; margin-bottom: 5px" />
+          </div>
+          <div>
+            <p class="gap">Ship To</p>
+            <p id="add"></p>
+            <hr style="width: 90%; margin-left: 2%; margin-bottom: 5px" />
+          </div>
+          <div>
+            <p class="gap">Method</p>
+            <p>Standard · $10.00</p>
+          </div>
+        </div>
+        <div id="payment">
+          <div style="font-weight: bold; margin-bottom: -1%; padding: 3%">
+            Credit Card
+          </div>
+          <hr style="width: 100%; margin-bottom: 5px" />
+          <div class="gray">
+            <input type="number" id="card" placeholder="Card number" />
+            <input type="text" id="name" placeholder="Name on card" />
+            <input
+              type="text"
+              id="date"
+              placeholder="Expiration date (MM / YY)"
+            />
+            <input type="text" id="cvv" placeholder="Security Code" />
+          </div>
+        </div>
+        <div id="finalstep">
+          <div>Return to cart</div>
+          <div><button id="finalstep-btn">Pay Now
+                <div id="process_animation"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          </button></div>
+        </div>
+      <p id="warn"></p>
+      </div>
+            <div>
+        <input type="text" placeholder="Discount Code" id="dis" />
+        <button id="dis-btn">Apply</button>
+        <hr class="lining" />
+        <div class="total">
+          <p>Subtotal</p>
+          <p style="margin-left: 55%"><b>$29.95</b></p>
+        </div>
+        <div class="total">
+          <p>Shipping</p>
+          <p style="margin-left: 55%"><b>$10.00<b></p>
+        </div>
+                <hr class="lining" />
+        <div class="total">
+          <p>Total</p>
+          <p style="margin-left: 55%; font-size: 1.5em;"><b>$39.95<b></p>
+        </div>
+    </div>
+  </div>
+
+    <div id='popup' style="display: none;" class="fulldisplay">
+      <div class="dialog" class="fulldisplay">
+      <h3 class="dialog-title fulldisplay">Order Placed</h3>
+      <div class="dialog-content fulldisplay">
+      <svg class="fulldisplay"id="m-check-mark" width="245px" height="173px" viewBox="0 0 245 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g class= "fulldisplay" id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.4">
+      <polyline class="fulldisplay" id="checkmark" stroke="#000000" stroke-width="15" points="5.640625 83.7607422 83.2539062 161.663086 238.97168 6.11328125"></polyline>
+    </g>
+      </svg>
+        <button id="homepage"><a href="../Landing Page/landingPage.html">Back to HOMEPAGE</a></button>
+</div>
+  </body>
+  <script src="../Payment/user_info.js"></script>
+  <script src="../Payment/payment.js"></script>
+</html>
