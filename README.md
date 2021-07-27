@@ -5,12 +5,19 @@
 This is the project we started as a four member team  during [Construct week](https://buffer.com/) organised at [Masai School](https://www.masaischool.com/), Bengaluru, Karnataka. We are trying to build as same as the website is and  still this project is in continuous upgradation and soon will be launched under custom domain .
 ## Table of Contents
 
+* [How to run the app](#how-to-run-the-app)
 * [Frameworks-Used](#frameworks-used)
 * [File Structure](#file-structure)
 * [Contributors](#contributors)
 * [Added Functionalities](#added-functionalities)
 * [Glimpse of our work](#glimpse-of-our-work)
 * [Reporting Issues](#reporting-issues)
+
+## How to run the app
+* Clone the repository "https://github.com/rao-kartik/himalaya-clone.git"
+* From the root folder right click on index,html and copy path
+* Now go to browser and paste the copied path and press enter
+* The app is ready to run
 
 ## Frameworks Used
 
