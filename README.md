@@ -6,10 +6,17 @@ This is the project we started as a four memeber team  during [Constructor week]
 ## Table of Contents
 
 * [Frameworks-Used](#frameworks-used)
-* [Installation](#installation)
 * [File Structure](#file-structure)
 * [Contributors](#contributors)
+* [Added Functionalities](#added-functionalities)
+* [Glimpse of our work](#glimpse-of-our-work)
 * [Reporting Issues](#reporting-issues)
+
+## Frameworks Used
+
+* Advanced Javascript
+* HTML
+* CSS
 
 ## File Structure
 Within the download you'll find the following directories and files:
@@ -52,7 +59,7 @@ Himalaya
 <a href="../../../../Rskamra002" target="_blank"><img src="https://avatars.githubusercontent.com/u/77038700?s=400&u=6f206ea33b1382c7f905b736741d0f5ef72ae0de&v=4" alt="Robin Singh" width="70" height="70" border="10" /></a> 
 <a href="../../../../Ramaruva" target="_blank"><img src="https://avatars.githubusercontent.com/u/64008831?s=400&v=4" alt="Ramaruva" width="70" height="70" border="10" /></a>
 
-## Functionalities Added
+## Added Functionalities
 1. Landing Page
 2. About Page
 3. Search
@@ -69,36 +76,6 @@ Himalaya
 14. FAQ Page
 15. Career Page
 16. Store Locator
-
-## Work Contribution-
-        ## Kartik
-        1. Landing Page Header and Images below header and footer
-        2. Search
-        3. Sign In
-        4. Register
-        5. Reset Password
-        6. Specific Product Page (Some of JS Part)
-        7. Cart Page
-        8. Account Page
-        
-        ## Robin
-        1. Landing Page Comment Section
-        2. Shop Page
-        3. Store Locator
-        4. Checkout and Payment Page    
-        5. Specific Product Page (Some CSS & JS)
-        
-         ## Shubham
-         1. Landing Page Footer Part
-         2. Specific Product Page
-         3. Contact ue Page
-         4. Blog Page
-         5. FAQ Page
-         6. Career Page
-         
-         ## Rama Krishna
-         1. Landing Page (Shop by Category & Best Slling producst Part)
-         2. About Page
 
 ## Glimpse of our work
 
