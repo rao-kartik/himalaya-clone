@@ -15,7 +15,7 @@ This is the project we started as a four member team  during [Construct week](ht
 
 ## How to run the app
 * Clone the repository "https://github.com/rao-kartik/himalaya-clone.git"
-* From the root folder right click on index,html and copy path
+* From the root folder right click on index.html and copy path
 * Now go to browser and paste the copied path and press enter
 * The app is ready to run
 
